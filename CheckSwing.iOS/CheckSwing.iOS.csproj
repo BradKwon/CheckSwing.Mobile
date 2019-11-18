@@ -81,9 +81,6 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png" />
     <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\Launch.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\Launch%402x.png" />
-    <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\Launch%403x.png" />
     <ImageAsset Include="Assets.xcassets\ic_event_fill.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\icons8-ballroom-dance-100.png" />
@@ -132,6 +129,9 @@
     <ImageAsset Include="Assets.xcassets\ic_admin.imageset\ic_admin.png" />
     <ImageAsset Include="Assets.xcassets\ic_admin.imageset\ic_admin%402x.png" />
     <ImageAsset Include="Assets.xcassets\ic_admin.imageset\ic_admin%403x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\splash_logo-1.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\splash_logo%402x-1.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\splash_logo%403x-1.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
