@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CheckSwing.Views.EventPage" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" Title="{Binding Title}" x:Name="BrowseEventPage">
+    <StackLayout>
+        <ListView x:Name="EventListView" ItemsSource="{Binding Items}" VerticalOptions="FillAndExpand" HasUnevenRows="true" RefreshCommand="{Binding LoadItemsCommand}" IsPullToRefreshEnabled="true" IsRefreshing="{Binding IsBusy, Mode=OneWay}" CachingStrategy="RecycleElement" ItemSelected="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="5" Orientation="Horizontal">
+                            <Image x:Name="EventImage" Source="{Binding ThumbnailUrl}" Aspect="AspectFit" HeightRequest="70" />
+                            <StackLayout Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="{Binding Title}" d:Text="{Binding .}" LineBreakMode="TailTruncation" Style="{DynamicResource ListItemTextStyle}" FontSize="15" FontAttributes="Bold" />
+                                        <Label Text="{Binding Description}" d:Text="{Binding Description}" LineBreakMode="WordWrap" MaxLines="2" Style="{DynamicResource ListItemTextStyle}" FontSize="12" />
+                                    </StackLayout>
+                                    <Image Source="ic_favorite_fill" VerticalOptions="CenterAndExpand" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding PostedDate}" d:Text="{Binding PostedDate}" Style="{DynamicResource ListItemTextStyle}" FontSize="12" />
+                                    <Image HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Source="{Binding CategoryIcon}" HeightRequest="15"></Image>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CheckSwing.Views.EventDetailPage"
+             Title="{Binding Title}">
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Image Source="{Binding Item.ImageUrl}" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Vertical" Padding="5">
+                <Label Text="{Binding Item.Title}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" FontSize="Medium"
+                       FontAttributes="Bold" />
+                <Label Text="{Binding Item.Description}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" FontSize="Small" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

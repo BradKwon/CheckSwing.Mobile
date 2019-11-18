@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BA2BFBDC-FEF5-43CF-A7BC-F2F1DCA31D93}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{89a4fe7c-635d-49c9-8d8c-5cd363c0d68d}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CheckSwing.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>CheckSwing.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\1024.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\Launch.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\Launch%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\Launch%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_event_fill.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\icons8-ballroom-dance-100.png" />
+    <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\icons8-ballroom-dance-100%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\icons8-ballroom-dance-100%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_event_fill.imageset\icons8-event-100.png" />
+    <ImageAsset Include="Assets.xcassets\ic_event_fill.imageset\icons8-event-100%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_event_fill.imageset\icons8-event-100%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_group_fill.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_cocktail_fill.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_cocktail_fill.imageset\icons8-cocktail-100.png" />
+    <ImageAsset Include="Assets.xcassets\ic_cocktail_fill.imageset\icons8-cocktail-100%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_cocktail_fill.imageset\icons8-cocktail-100%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_group_fill.imageset\icons8-myspace-100.png" />
+    <ImageAsset Include="Assets.xcassets\ic_group_fill.imageset\icons8-myspace-100%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_group_fill.imageset\icons8-myspace-100%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_arrow_right_fill.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_arrow_right_fill.imageset\icons8-chevron-right-100.png" />
+    <ImageAsset Include="Assets.xcassets\ic_arrow_right_fill.imageset\icons8-chevron-right-100%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_arrow_right_fill.imageset\icons8-chevron-right-100%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_favorite_fill.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_favorite_fill.imageset\icons8-add-to-favorites-100 %281%29.png" />
+    <ImageAsset Include="Assets.xcassets\ic_favorite_fill.imageset\icons8-add-to-favorites-100 %281%29%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_favorite_fill.imageset\icons8-add-to-favorites-100 %281%29%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_question_mark_fill.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_question_mark_fill.imageset\question_mark_fill.png" />
+    <ImageAsset Include="Assets.xcassets\ic_question_mark_fill.imageset\question_mark_fill%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_question_mark_fill.imageset\question_mark_fill%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_subway_fill.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_subway_fill.imageset\ic_subway_fill.png" />
+    <ImageAsset Include="Assets.xcassets\ic_subway_fill.imageset\ic_subway_fill%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_subway_fill.imageset\ic_subway_fill%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_location_fill.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_location_fill.imageset\ic_location_fill.png" />
+    <ImageAsset Include="Assets.xcassets\ic_location_fill.imageset\ic_location_fill%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_location_fill.imageset\ic_location_fill%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_map.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_map.imageset\ic_map.png" />
+    <ImageAsset Include="Assets.xcassets\ic_map.imageset\ic_map%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_map.imageset\ic_map%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_website.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_website.imageset\ic_website.png" />
+    <ImageAsset Include="Assets.xcassets\ic_website.imageset\ic_website%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_website.imageset\ic_website%403x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_admin.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\ic_admin.imageset\ic_admin.png" />
+    <ImageAsset Include="Assets.xcassets\ic_admin.imageset\ic_admin%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_admin.imageset\ic_admin%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\CheckSwing\CheckSwing.csproj">
+      <Project>{2DE4516D-E731-40DB-98FF-D07B342BFC13}</Project>
+      <Name>CheckSwing</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\LaunchImage.imageset\" />
+    <Folder Include="Assets.xcassets\ic_event_fill.imageset\" />
+    <Folder Include="Assets.xcassets\ic_dance_fill.imageset\" />
+    <Folder Include="Assets.xcassets\ic_group_fill.imageset\" />
+    <Folder Include="Assets.xcassets\ic_cocktail_fill.imageset\" />
+    <Folder Include="Assets.xcassets\ic_arrow_right_fill.imageset\" />
+    <Folder Include="Assets.xcassets\ic_favorite_fill.imageset\" />
+    <Folder Include="Assets.xcassets\ic_question_mark_fill.imageset\" />
+    <Folder Include="Assets.xcassets\ic_subway_fill.imageset\" />
+    <Folder Include="Assets.xcassets\ic_location_fill.imageset\" />
+    <Folder Include="Assets.xcassets\ic_map.imageset\" />
+    <Folder Include="Assets.xcassets\ic_website.imageset\" />
+    <Folder Include="Assets.xcassets\ic_admin.imageset\" />
+  </ItemGroup>
+</Project>
