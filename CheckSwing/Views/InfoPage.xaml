@@ -1,12 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="CheckSwing.Views.InfoPage" Title="{Binding Title}" x:Name="BrowseInfoPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             mc:Ignorable="d" x:Class="CheckSwing.Views.InfoPage" Title="{Binding Title}" x:Name="BrowseInfoPage">
     <StackLayout>
-        <ListView x:Name="InfoListView" ItemsSource="{Binding Items}" VerticalOptions="FillAndExpand" HasUnevenRows="true" RefreshCommand="{Binding LoadItemsCommand}" IsPullToRefreshEnabled="true" IsRefreshing="{Binding IsBusy, Mode=OneWay}" CachingStrategy="RecycleElement" ItemSelected="OnItemSelected">
+        <ListView x:Name="InfoListView" ItemsSource="{Binding Items}" VerticalOptions="FillAndExpand" HasUnevenRows="true"
+                  RefreshCommand="{Binding LoadItemsCommand}" IsPullToRefreshEnabled="true"
+                  IsRefreshing="{Binding IsBusy, Mode=OneWay}" CachingStrategy="RecycleElement"
+                  Footer="" ios:ListView.SeparatorStyle="FullWidth"
+                  ItemSelected="OnItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Padding="10" Orientation="Horizontal">
-                            <Label Text="{Binding Name}" d:Text="{Binding .}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
+                            <Image Source="ic_arrow_right_fill" Aspect="AspectFit" HeightRequest="20" VerticalOptions="Center" />
+                            <Label Text="{Binding Name}" d:Text="{Binding .}" LineBreakMode="NoWrap"
+                                   HeightRequest="30" VerticalTextAlignment="Center"
+                                   Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

@@ -1,26 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-            mc:Ignorable="d" xmlns:views="clr-namespace:CheckSwing.Views" x:Class="CheckSwing.Views.MainPage"
-            SelectedTabColor="{StaticResource MainColor}"
+            mc:Ignorable="d" xmlns:views="clr-namespace:CheckSwing.Views" x:Class="CheckSwing.Views.MainPage" x:Name="Tabbar"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            xmlns:effects="clr-namespace:CheckSwing.Effects"
+            SelectedTabColor="{StaticResource MainColor}" BarBackgroundColor="AliceBlue"
             android:TabbedPage.ToolbarPlacement="Bottom">
+    <TabbedPage.Effects>
+        <effects:NoShiftEffect />
+    </TabbedPage.Effects>
     <TabbedPage.Children>
-        <NavigationPage IconImageSource="ic_dance_fill">
+        <NavigationPage IconImageSource="ic_dance_fill" Title="">
             <x:Arguments>
                 <views:InfoPage />
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage IconImageSource="ic_event_fill">
+        <NavigationPage IconImageSource="ic_event_fill" Title="">
             <x:Arguments>
                 <views:EventPage />
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage IconImageSource="ic_group_fill">
+        <NavigationPage IconImageSource="ic_group_fill" Title="">
             <x:Arguments>
                 <views:ClubPage />
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage IconImageSource="ic_cocktail_fill">
+        <NavigationPage IconImageSource="ic_cocktail_fill" Title="">
             <x:Arguments>
                 <views:BarPage />
             </x:Arguments>

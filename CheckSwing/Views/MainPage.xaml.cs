@@ -14,6 +14,7 @@ namespace CheckSwing.Views
         public MainPage()
         {
             InitializeComponent();
+            var tmp = Tabbar.On<Android>().Element;
         }
     }
 }
