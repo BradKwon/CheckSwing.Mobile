@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="CheckSwing.Views.ClubDetailPage"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              NavigationPage.BackButtonTitle=""
              mc:Ignorable="d" Title="{Binding Title}">
     <ScrollView>
@@ -44,7 +45,8 @@
             </StackLayout>
             <Label Text="{Binding DetailItemsTitle}" d:Text="Club Events" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"
                    Padding="5" BackgroundColor="AliceBlue" FontAttributes="Bold" />
-            <ListView x:Name="ClubEventListView" ItemsSource="{Binding DetailItems}" VerticalOptions="FillAndExpand" HasUnevenRows="True"
+            <ListView x:Name="ClubEventListView" ItemsSource="{Binding DetailItems}" VerticalOptions="FillAndExpand"
+                      HasUnevenRows="True" Footer="" ios:ListView.SeparatorStyle="FullWidth"
                       CachingStrategy="RecycleElement" ItemSelected="OnItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
