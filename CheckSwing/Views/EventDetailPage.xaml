@@ -4,8 +4,8 @@
              x:Class="CheckSwing.Views.EventDetailPage" Title="{Binding Title}">
     <ScrollView>
         <StackLayout Orientation="Vertical">
-            <ffimage:CachedImage Source="{Binding Item.ImageUrl}" CacheDuration="0"
-                                 LoadingPlaceholder="image_placeholder"
+            <ffimage:CachedImage Source="{Binding Item.ImageUrl}" CacheDuration="30" HeightRequest="250"
+                                 LoadingPlaceholder="image_placeholder" DownsampleToViewSize="True"
                                  RetryCount="3" Aspect="AspectFill" />
             <StackLayout Orientation="Vertical" Padding="5">
                 <Label Text="{Binding Item.Title}" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" FontSize="Medium"
