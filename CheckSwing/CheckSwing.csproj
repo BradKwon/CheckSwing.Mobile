@@ -8,9 +8,12 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Enums\" />
     <Folder Include="Effects\" />
+    <Folder Include="CustomControls\" />
+    <Folder Include="Enums\NavigationPage\" />
   </ItemGroup>
 </Project>
