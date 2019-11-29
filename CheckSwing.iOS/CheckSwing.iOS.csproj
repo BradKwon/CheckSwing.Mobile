@@ -74,9 +74,6 @@
     <ImageAsset Include="Assets.xcassets\LaunchImage.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\ic_event_fill.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\icons8-ballroom-dance-100.png" />
-    <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\icons8-ballroom-dance-100%402x.png" />
-    <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\icons8-ballroom-dance-100%403x.png" />
     <ImageAsset Include="Assets.xcassets\ic_event_fill.imageset\icons8-event-100.png" />
     <ImageAsset Include="Assets.xcassets\ic_event_fill.imageset\icons8-event-100%402x.png" />
     <ImageAsset Include="Assets.xcassets\ic_event_fill.imageset\icons8-event-100%403x.png" />
@@ -136,6 +133,9 @@
     <ImageAsset Include="Assets.xcassets\image_placeholder.imageset\image-placeholder-icon-5.jpg" />
     <ImageAsset Include="Assets.xcassets\image_placeholder.imageset\image-placeholder-icon-5%402x.jpg" />
     <ImageAsset Include="Assets.xcassets\image_placeholder.imageset\image-placeholder-icon-5%403x.jpg" />
+    <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\splash_logo%402x%403x-1.png" />
+    <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\splash_logo%402x%403x%402x.png" />
+    <ImageAsset Include="Assets.xcassets\ic_dance_fill.imageset\splash_logo%402x%403x%403x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
