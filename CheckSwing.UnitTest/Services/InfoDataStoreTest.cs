@@ -1,25 +1,25 @@
-﻿using System;
+﻿using System.Linq;
 using CheckSwing.Services;
 using NUnit.Framework;
-using Xamarin.Forms;
 
 namespace CheckSwing.UnitTest.Services
 {
+    [TestFixture]
     [Category("Services")]
     public class InfoDataStoreTest
     {
         IInfoDataStore _infoDataStore;
 
-        [SetUp]
-        public void Setup()
+        [OneTimeSetUp]
+        public void Init()
         {
-            DependencyService.Register<MockInfoDataStore>();
+            _infoDataStore = new MockInfoDataStore();
         }
 
         [Test]
         public void ConstructorTest()
         {
-
+            Assert.Greater(_infoDataStore.GetItemsAsync().Result.Count(), 0);
         }
     }
 }

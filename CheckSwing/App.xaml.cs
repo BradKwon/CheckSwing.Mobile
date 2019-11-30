@@ -1,8 +1,5 @@
-﻿using System;
+﻿using CheckSwing.Views;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using CheckSwing.Services;
-using CheckSwing.Views;
 
 namespace CheckSwing
 {
@@ -11,9 +8,8 @@ namespace CheckSwing
 
         public App()
         {
+            ModuleRegister.RegisterMockModules();
             InitializeComponent();
-
-            //DependencyService.Register<MockDataRepository>();
             MainPage = new MainPage();
         }
 
