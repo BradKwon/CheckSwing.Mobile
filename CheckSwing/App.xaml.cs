@@ -13,7 +13,7 @@ namespace CheckSwing
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataRepository>();
+            //DependencyService.Register<MockDataRepository>();
             MainPage = new MainPage();
         }
 

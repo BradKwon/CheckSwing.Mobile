@@ -1,4 +1,7 @@
-﻿namespace CheckSwing.Services
+﻿using Xamarin.Forms;
+
+[assembly: Dependency(typeof(CheckSwing.Services.MockDataRepository))]
+namespace CheckSwing.Services
 {
     public class MockDataRepository : IDataRepository
     {
