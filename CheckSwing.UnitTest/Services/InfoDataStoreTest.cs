@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CheckSwing.Models;
@@ -10,7 +9,7 @@ namespace CheckSwing.UnitTest.Services
 {
     [Category("Services")]
     [TestFixture]
-    public class InfoDataStoreTest
+    public class InfoDataStoreTest : IServicesTest
     {
         IInfoDataStore _infoDataStore;
 
@@ -18,12 +17,6 @@ namespace CheckSwing.UnitTest.Services
         public void Init()
         {
             _infoDataStore = new MockInfoDataStore();
-        }
-
-        [OneTimeTearDown]
-        public void CleanUp()
-        {
-
         }
 
         [Test]
