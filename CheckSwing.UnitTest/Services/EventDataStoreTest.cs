@@ -1,44 +1,30 @@
 ﻿using System;
-using System.Threading.Tasks;
+using CheckSwing.Enums;
+using CheckSwing.Models;
 using CheckSwing.Services;
-using NUnit.Framework;
 
 namespace CheckSwing.UnitTest.Services
 {
-    [Category("Services")]
-    [TestFixture]
-    public class EventDataStoreTest : IServicesTest
+    public class EventDataStoreTest : DataStoreTest<Event>
     {
-        IEventDataStore _eventDataStore;
-
-        public Task AddItemAsyncTest()
+        public override void Init()
         {
-            throw new NotImplementedException();
+            DataStore = new MockEventDataStore();
         }
 
-        public Task ConstructorTest()
+        public override void SetTestItemToBeAdded()
         {
-            throw new NotImplementedException();
-        }
-
-        public Task DeleteItemAsyncTest()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task GetItemAsyncTest()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Init()
-        {
-
-        }
-
-        public Task UpdateItemAsyncTest()
-        {
-            throw new NotImplementedException();
+            TestItemToBeAdded = new Event
+            {
+                Id = "test1",
+                Name = "TEST EVENT",
+                Category = ClubCategoryEnum.AppNotice,
+                ThumbnailUrl = "https://picsum.photos/id/0/300/200",
+                ImageUrl = "https://picsum.photos/id/0/800/600",
+                PostedDate = DateTime.Now,
+                CategoryIcon = "ic_group_fill",
+                Description = "TEST EVENT DESCRIPTION"
+            };
         }
     }
 }

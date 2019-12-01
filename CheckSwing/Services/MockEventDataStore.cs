@@ -14,7 +14,7 @@ namespace CheckSwing.Services
                 new Event
                 {
                     Id = Guid.NewGuid().ToString(),
-                    Title = "스윙하일 어플 알파 오픈!",
+                    Name = "스윙하일 어플 알파 오픈!",
                     Category = ClubCategoryEnum.AppNotice,
                     ThumbnailUrl = "https://picsum.photos/id/0/300/200",
                     ImageUrl = "https://picsum.photos/id/0/800/600",
@@ -25,7 +25,7 @@ namespace CheckSwing.Services
                 new Event
                 {
                     Id = Guid.NewGuid().ToString(),
-                    Title = "[파티] 두둥, 창원 스윙댄스 동호회 1주년 기념 파티",
+                    Name = "[파티] 두둥, 창원 스윙댄스 동호회 1주년 기념 파티",
                     Category = ClubCategoryEnum.Bar,
                     ThumbnailUrl = "https://picsum.photos/id/10/300/200",
                     ImageUrl = "https://picsum.photos/id/10/800/600",
@@ -37,7 +37,7 @@ namespace CheckSwing.Services
                 new Event
                 {
                     Id = Guid.NewGuid().ToString(),
-                    Title = "[안내] 2014 하반기 스윙트리 지인 소개왕창",
+                    Name = "[안내] 2014 하반기 스윙트리 지인 소개왕창",
                     Category = ClubCategoryEnum.Club,
                     ThumbnailUrl = "https://picsum.photos/id/200/300/200",
                     ImageUrl = "https://picsum.photos/id/200/800/600",
@@ -49,7 +49,7 @@ namespace CheckSwing.Services
                 new Event
                 {
                     Id = Guid.NewGuid().ToString(),
-                    Title = "[파티] 2014년 미리 Merry Christmas Party",
+                    Name = "[파티] 2014년 미리 Merry Christmas Party",
                     Category = ClubCategoryEnum.Bar,
                     ThumbnailUrl = "https://picsum.photos/id/33/300/200",
                     ImageUrl = "https://picsum.photos/id/33/800/600",
@@ -61,7 +61,7 @@ namespace CheckSwing.Services
                 new Event
                 {
                     Id = Guid.NewGuid().ToString(),
-                    Title = "24기 지터벅 강사를 공개 모집합니다.",
+                    Name = "24기 지터벅 강사를 공개 모집합니다.",
                     Category = ClubCategoryEnum.Club,
                     ThumbnailUrl = "https://picsum.photos/id/44/300/200",
                     ImageUrl = "https://picsum.photos/id/44/800/600",

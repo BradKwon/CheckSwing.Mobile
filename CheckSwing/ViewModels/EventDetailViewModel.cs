@@ -7,7 +7,7 @@ namespace CheckSwing.ViewModels
     {
         public EventDetailViewModel(Event pEvent)
         {
-            Title = pEvent?.Title;
+            Title = pEvent?.Name;
             Item = pEvent;
         }
     }
